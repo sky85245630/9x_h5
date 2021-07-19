@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+            }
+
+            .wapper {
+            }
+
+            .content {
+                padding: 20px;
+            }
+
+            .content span {
+                font-size: 14px;
+            }
+
+            .content h5 {
+                color: #222;
+                font-size: 20px;
+            }
+
+            .content p {
+                color: #444;
+            }
+            .title h4,
+            .title span {
+                color: white;
+            }
+            .content span,
+            .downloadBox .title span {
+                color: #c5c5c5;
+            }
+            /* content內容 */
+
+            .header > div,
+            .des > div,
+            .rateBox > div,
+            .previewBox > .previewImg,
+            .downloadBox > div {
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: -4px;
+            }
+
+            .header .img,
+            .downloadBox .img,
+            .des .img {
+                text-align: center;
+            }
+
+            .rateBox,
+            .versionBox,
+            .previewBox,
+            .detailBox,
+            .downloadBox {
+                padding: 10px 0;
+            }
+
+            .header .img img,
+            .des .img img,
+            .downloadBox .img img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .header .img {
+                width: 15% !important;
+            }
+
+            .header .img img {
+                max-width: 40px !important;
+                max-height: 40px !important;
+            }
+
+            .version,
+            .detailBox p {
+                margin-bottom: 10px;
+            }
+            .header {
+                background-color: #404c48;
+                opacity: 0.75;
+                position: absolute;
+                top: 0;
+                width: 100%;
+            }
+            .header .img {
+                width: 30%;
+            }
+
+            .des .img {
+                width: 20%;
+            }
+
+            .header .img img {
+                max-width: 100px;
+                max-height: 100px;
+            }
+
+            .header .title {
+                width: 40%;
+                padding: 8px;
+                position: relative;
+            }
+
+            .header .title div {
+                padding: 0 10px;
+            }
+
+            .des .img img {
+                max-width: 40px;
+                max-height: 40px;
+            }
+
+            .des .title {
+                width: 66%;
+                padding: 8px;
+                position: relative;
+            }
+
+            .des .title div {
+                padding: 0 10px;
+            }
+
+            .rate {
+                width: 50%;
+                text-align: center;
+            }
+
+            .rate h6 {
+                font-weight: 100;
+            }
+
+            .rate h6 {
+                font-size: 24px;
+                color: #999;
+            }
+
+            .rate + .rate {
+                position: relative;
+            }
+            .mt30 {
+                margin-top: 30px;
+            }
+            .rate + .rate::before {
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 25%;
+                width: 2px;
+                height: 70%;
+                background-color: #c5c5c5;
+            }
+            .rateBox {
+                border-bottom: 1px solid #c5c5c5;
+            }
+
+            .active {
+                color: #23b887 !important;
+            }
+            .versionBox {
+            }
+
+            .previewBox {
+                text-align: center;
+            }
+
+            .previewImg {
+                width: 49%;
+                border-radius: 10px;
+                overflow: hidden;
+            }
+
+            .previewImg + .previewImg {
+                margin-left: 8px;
+            }
+
+            .previewImg img {
+                width: 100%;
+            }
+
+            .detailBox {
+            }
+
+            .downloadBox .img {
+                width: 20%;
+            }
+
+            .downloadBox .img img {
+                max-width: 50px;
+                max-height: 50px;
+            }
+
+            .downloadBox .title {
+                width: 50%;
+            }
+
+            .dl {
+                background-color: #077afe;
+                border-radius: 10px;
+                border: 0px solid;
+                padding: 3px;
+                width: 80px;
+                color: white;
+            }
+
+            .des_time {
+                float: right;
+                color: #999;
+                font-weight: 300;
+            }
+
+            .des div p {
+                font-weight: 200;
+            }
+
+            .top_dl {
+                width: 100%;
+                background-color: #fff75d;
+                color: red;
+                border-radius: 14px;
+                border: 0px solid;
+                height: 30px;
+            }
+
+            .QQ span {
+                color: #999;
+                margin-top: 5px;
+            }
+
+            .dlbtn {
+                background-color: #1fbf8a;
+                border-radius: 30px;
+                height: 50px;
+                width: 60%;
+                border: 0px solid;
+                color: white;
+                font-size: 18px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="wapper">
+            <img src="./img/1top.png" style="width: 100%" alt="" />
+            <div class="header">
+                <div class="img">
+                    <img src="./img/detail.png" />
+                </div>
+                <div class="title">
+                    <h4>咸鱼小说</h4>
+                    <span style="font-size: 8px">789574萬人下載</span><br />
+                </div>
+                <div style="width: 30%">
+                    <button class="top_dl">立即下載</button>
+                </div>
+            </div>
+            <div class="QQ" style="text-align: center; margin: -50px 0 0 0">
+                <img src="./img/detail.png" />
+                <h2>咸鱼小说</h2>
+                <span style="color: #f5a623">★★★★★ </span> 4.8分<br />
+                <span>版本：1.0.0 <span style="color: red">免费版</span></span
+                ><br />
+                <span>10.5M | 786425人下载</span><br /><br />
+
+                <button class="dlbtn">点击下载免费阅读</button>
+            </div>
+
+            <div class="content">
+                <div class="previewBox">
+                    <!-- <h6 style="margin: 5px 0">
+                        <img src="./img/dunpai.png" style="width: 10px" />
+                        认准咸鱼小说，免费小说请放心下载
+                    </h6> -->
+                    <div class="previewImg">
+                        <img src="./img/Q1.png" />
+                    </div>
+                    <div class="previewImg">
+                        <img src="./img/Q2.png" />
+                    </div>
+                </div>
+                <div class="rateBox">
+                    <div class="rate">
+                        <h6 class="active">詳情</h6>
+                    </div>
+                    <div class="rate">
+                        <h6>評論(8.9萬＋)</h6>
+                    </div>
+                </div>
+
+                <div class="mt30">
+                    <div class="des">
+                        <div>
+                            <p>
+                                真的全部免费呢，好多热门书籍都能看，超爱这个软件啊，由衷感谢制作团队啦！么么哒
+                            </p>
+                            <br />
+
+                            <p>
+                                【热门小说】全网热门小说《元尊》《圣墟》《魔道祖师》《斗罗大陆》《大主宰》《斗破苍穹》《都市仙尊》《九棺》《武动乾坤》等书籍全
+                            </p>
+                            <br />
+
+                            <p>
+                                【在线阅读】无需找寻并下载TXT小说文档，更无需手机连接电脑转移文档，网络资源随意选择。
+                            </p>
+                            <br />
+
+                            <p>
+                                【下载阅读】选择任意书籍，可分章节或全部章节下载，轻巧快捷，多种选择！
+                            </p>
+                            <br />
+
+                            <p>
+                                【强大搜索】强大搜索功能、按作者、按书名、总能找到您想要的！
+                            </p>
+                            <br /><br />
+
+                            <p style="text-align: center; color: #1fc08a">
+                                咸鱼小说--用户体验第一！
+                            </p>
+                            <br /><br />
+
+                            <div style="text-align: center">
+                                <img
+                                    src="./img/1bottom.png"
+                                    style="max-width: 80%"
+                                    alt=""
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

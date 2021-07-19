@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+            }
+
+            .wapper {
+            }
+
+            .content {
+                padding: 20px;
+            }
+
+            .content span {
+                font-size: 14px;
+            }
+
+            .content h5 {
+                color: #222;
+                font-size: 20px;
+            }
+
+            .content p {
+                color: #444;
+            }
+
+            .content span,
+            .downloadBox .title span {
+                color: #c5c5c5;
+            }
+            /* content內容 */
+
+            .header > div,
+            .rateBox > div,
+            .previewBox > .previewImg,
+            .downloadBox > div {
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: -4px;
+            }
+
+            .header .img,
+            .downloadBox .img {
+                text-align: center;
+            }
+
+            .rateBox,
+            .versionBox,
+            .previewBox,
+            .detailBox,
+            .downloadBox {
+                border-top: 1px solid #c5c5c5;
+                padding: 10px 0;
+            }
+
+            .header .img img,
+            .downloadBox .img img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .version,
+            .detailBox p {
+                margin-bottom: 10px;
+            }
+
+            .header .img {
+                width: 30%;
+            }
+
+            .header .img img {
+                max-width: 100px;
+                max-height: 100px;
+            }
+
+            .header .title {
+                width: 66%;
+                padding: 8px;
+            }
+
+            .header .title div {
+                padding: 0 10px;
+            }
+
+            .rate {
+                width: 33%;
+                text-align: center;
+            }
+
+            .rate h6 {
+                font-size: 40px;
+                color: #999;
+            }
+
+            .rate + .rate {
+                position: relative;
+            }
+
+            .rate + .rate::before {
+                content: "";
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 25%;
+                width: 2px;
+                height: 70%;
+                background-color: #c5c5c5;
+            }
+
+            .versionBox {
+            }
+
+            .previewBox {
+            }
+
+            .previewImg {
+                width: 49%;
+                border-radius: 10px;
+                overflow: hidden;
+            }
+
+            .previewImg + .previewImg {
+                margin-left: 8px;
+            }
+
+            .previewImg img {
+                width: 100%;
+            }
+
+            .detailBox {
+            }
+
+            .downloadBox .img {
+                width: 20%;
+            }
+
+            .downloadBox .img img {
+                max-width: 50px;
+                max-height: 50px;
+            }
+
+            .downloadBox .title {
+                width: 50%;
+            }
+
+            .dl {
+                background-color: #077afe;
+                border-radius: 10px;
+                border: 0px solid;
+                padding: 3px;
+                width: 80px;
+                color: white;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="wapper">
+            <div class="content">
+                <div class="header">
+                    <div class="img">
+                        <img src="./img/detail.png" />
+                    </div>
+                    <div class="title">
+                        <h4>咸鱼小说-看免费小说 大全的阅读神器</h4>
+                        <span>免费畅读全网小说</span><br />
+                        <button class="dl">立即下載</button>
+                    </div>
+                </div>
+                <div class="rateBox">
+                    <div class="rate">
+                        <span>頻分</span>
+                        <h6>30</h6>
+                        <span>★★★★★</span>
+                    </div>
+                    <div class="rate">
+                        <span>年齡</span>
+                        <h6>17</h6>
+                        <span>歲</span>
+                    </div>
+                    <div class="rate">
+                        <span>頻分</span>
+                        <h6>30</h6>
+                        <span>星星</span>
+                    </div>
+                </div>
+                <div class="versionBox">
+                    <h5>新功能</h5>
+                    <div class="version">
+                        <span>版本1.2.1 3天前</span>
+                        <p>优化阅读体验，提升产品稳定性</p>
+                    </div>
+                </div>
+                <div class="previewBox">
+                    <h5>預覽</h5>
+                    <div class="previewImg">
+                        <img src="./img/1.png" />
+                    </div>
+                    <div class="previewImg">
+                        <img src="./img/2.png" />
+                    </div>
+                </div>
+                <div class="detailBox">
+                    <h5>詳情</h5>
+                    <br />
+                    <p>
+                        【咸鱼小说】不花钱看全网热门小说,书虫必备小说追书神器，功能体验全面升级，全网小说任你搜。一键缓存到本地，让你随时随地自由畅读
+                    </p>
+                    <br />
+                    <p>
+                        【热门小说】全网热门小说《元尊》《圣墟》《魔道祖师》《斗罗大陆》《大主宰》《斗破苍穹》《都市仙尊》《九棺》《武动乾坤》等书籍全
+                        <br />
+                    </p>
+                    <br />
+                    <p>
+                        【在线阅读】无需找寻并下载TXT小说文档，更无需手机连接电脑转移文档，网络资源随意选择。
+                    </p>
+                    <br />
+                    <p>
+                        【下载阅读】选择任意书籍，可分章节或全部章节下载，轻巧快捷，多种选择！
+                    </p>
+                    <br />
+                    <p>
+                        【强大搜索】强大搜索功能、按作者、按书名、总能找到您想要的！
+                    </p>
+                </div>
+            </div>
+            <div class="downloadBox">
+                <div class="img">
+                    <img src="./img/detail.png" />
+                </div>
+                <div class="title">
+                    <h3>咸鱼小说-看免费小说...</h3>
+                    <span>看免费小说，就来咸鱼</span><br />
+                    <span>大小：12MB 版本：1.2.1</span>
+                </div>
+                <div><button class="dl">按鈕</button></div>
+            </div>
+        </div>
+    </body>
+</html>
